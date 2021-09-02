@@ -1,0 +1,30 @@
+.timer-container {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-button {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-face {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.timer-seconds {
+  width: 2ch;
+}
+
+.seconds-input {
+  margin-bottom: 20px;
+}
