@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-
+import PadWithZero from './utils/PadWithZero'
 import './styles.css'
 
 const Timer = () => {
@@ -12,6 +12,17 @@ const Timer = () => {
       setSeconds(decreace => decreace - 1)
     }, 1000)
   }
+
+  // Clears the seconds when the time becomes zero
+  if (seconds <= 0) {
+    clearInterval(intervalRef.current)
+  }
+
+  //   clears the time when page is refresh/onload
+  window.onload = event => {
+    clearInterval(intervalRef.current)
+  }
+
   return (
     <>
       <div className="timer-container">
