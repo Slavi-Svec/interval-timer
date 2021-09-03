@@ -19,7 +19,7 @@ const Timer = () => {
         <div className="clock-face">
           <span className="timer-minutes">00</span>
           <span className="timer-colon">:</span>
-          <span className="timer-seconds">{seconds}</span>
+          <span className="timer-seconds">{PadWithZero(seconds, 2)}</span>
           <button onClick={handleStart}>Start</button>
         </div>
       </div>
